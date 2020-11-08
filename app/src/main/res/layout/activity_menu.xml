@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="422dp"
+        android:layout_height="447dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:focusableInTouchMode="true"
+        android:foreground="@drawable/a"
+        android:scrollbarThumbHorizontal="@drawable/a"
+        android:scrollbarThumbVertical="@drawable/b"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ViewFlipper>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="424dp"
+        android:layout_height="258dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <ImageButton
+                android:id="@+id/bcliente"
+                android:layout_width="201dp"
+                android:layout_height="122dp"
+                android:onClick="vcliente"
+                app:srcCompat="@drawable/perfil_men" />
+
+            <ImageButton
+                android:id="@+id/bprestamo"
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:onClick="vprestamo"
+                app:srcCompat="@drawable/dinero_men" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/verprestamo"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:text="             Gestionar clientes" />
+
+            <TextView
+                android:id="@+id/encriptado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="          Gestionar Prestamos" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bseguridad"
+                android:layout_width="179dp"
+                android:layout_height="93dp"
+                android:onClick="vseguridad"
+                app:srcCompat="@drawable/secure_men" />
+
+            <ImageButton
+                android:id="@+id/binfo"
+                android:layout_width="223dp"
+                android:layout_height="match_parent"
+                android:onClick="vinfo"
+                app:srcCompat="@drawable/info_men" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                Seguridad" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                       Informacion" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

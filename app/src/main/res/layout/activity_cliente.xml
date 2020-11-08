@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".CLIENTES_ACT">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="262dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/base" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="267dp"
+        android:layout_height="186dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.1">
+
+        <EditText
+            android:id="@+id/codigoed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Codigo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nombreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/salarioed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Salario"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="218dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/guardarcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="GuardarCliente"
+            android:text="Guardar Cliente" />
+
+        <Button
+            android:id="@+id/mostrarcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="MostrarCliente"
+            android:text="Mostrar Cliente" />
+
+        <Button
+            android:id="@+id/eliminarcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="EliminarCliente"
+            android:text="Eliminar Cliente" />
+
+        <Button
+            android:id="@+id/actualizarcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ModificarCliente"
+            android:text="Actualizar Cliente" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
